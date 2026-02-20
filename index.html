@@ -1,235 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portfolio</title>
-
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-
-body {
-    background-color: #f8fafc;
-    color: #1e293b;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
-    background-color: #f1f5f9;
-}
-
-nav .logo {
-    font-weight: bold;
-    font-size: 20px;
-}
-
-nav ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
-
-nav a {
-    text-decoration: none;
-    color: #1e293b;
-    padding: 8px 15px;
-    border: 1px solid #1e293b;
-    border-radius: 8px;
-}
-
-nav a:hover {
-    background-color: #2563eb;
-    color: white;
-}
-
-#theme-toggle {
-    padding: 8px 12px;
-    border-radius: 8px;
-    border: 1px solid #1e293b;
-    cursor: pointer;
-    background: transparent;
-}
-
-section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.hero img {
-    width: 150px;
-    border-radius: 12px;
-    margin-bottom: 20px;
-    padding: 15px;
-}
-
-.hero h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-.hero button {
-    padding: 10px 20px;
-    border-radius: 8px;
-    border: 1px solid #1e293b;
-    background: transparent;
-    cursor: pointer;
-}
-
-.projects {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.project-card {
-    background: white;
-    padding: 20px;
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-.about p{
-    font-size: 15px;
-}
-
-.dark-mode {
-    background-color: #0f172a;
-    color: #f1f5f9;
-}
-
-.dark-mode nav {
-    background-color: #1e293b;
-}
-
-.dark-mode nav a {
-    border-color: #f1f5f9;
-    color: #f1f5f9;
-}
-
-.dark-mode #theme-toggle {
-    border-color: #f1f5f9;
-    color: #f1f5f9;
-}
-
-.dark-mode .project-card {
-    background-color: #1e293b;
-}
-
-footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
-</style>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-<nav>
-    <button id="theme-toggle">🌙</button>
+<header>
+    <nav>
+        <img src="111-1112824_portfolio-png.png" alt="MyPortfolio" height="70" width="200">
+        
+        <ul class="nav-links">
+            <li><a href="">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contact</a></li>
+        </ul>
 
-    <div class="logo">My Portfolio</div>
+        <button id="theme-toggle">🌙</button>
+    </nav>
+</header>
 
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
-<section class="hero" id="home">
-    <img src="pic.jpeg" alt="Profile Image">
-    <h1>Hello, I am Karan Verma, from Electrical department.</h1>
+<section class="hero">
+    <img src="pic.jpeg" alt="Karan Verma" height="200" width="150">
+    <h1>Hello, I am Karan Verma, from Electrical Department.</h1>
     <p>Currently learning DSA and Web Development.</p>
-    <br>
-    <button><a href="https://karann6287-sudo.github.io/visionmanit/">View Project</a></button>
+    <a href="https://karann6287-sudo.github.io/visionmanit/" target="_blank">
+        <button>View Project</button>
+    </a>
 </section>
 
-<section id="about">
+<section class="about" id="about">
     <h2>About Me</h2>
-    <br>
     <p>
-        I am passionate about programming and web development.
-        Currently learning Data Structures & Algorithms and building projects using HTML & CSS.
+        I am Karan Verma, having a strong interest in programming and web development.
+        I am currently learning Data Structures & Algorithms while building projects 
+        using HTML and CSS to strengthen my development skills.
     </p>
 </section>
 
-<section>
-    <h2>Skills</h2>
-    <br>
-    <p>Web Development</p>
-    <p>DSA Problem Solving</p>
+<section class="skills">
+    <h3>Skills</h3>
+    <ul>
+        <li>Web Development</li>
+        <li>DSA Problem Solving</li>
+    </ul>
 </section>
 
-<section>
-    <h2>Programming Languages</h2>
-    <br>
-    <p>C++</p>
-    <p>C</p>
+<section class="languages">
+    <h3>Programming Languages</h3>
+    <ul>
+        <li>C++</li>
+        <li>C</li>
+    </ul>
 </section>
 
-<section id="projects">
+<section class="projects" id="projects">
     <h2>Projects</h2>
-    <br>
-    <div class="projects">
-        <div class="project-card">Personal Portfolio</div>
-        <div class="project-card">Society Landing Page</div>
-        <div class="project-card">Event Survey Form</div>
+    <div class="project-grid">
+        <div class="card">Personal Portfolio</div>
+        <div class="card">Society Landing Page</div>
+        <div class="card">Event Survey Form</div>
     </div>
 </section>
 
-<section id="contact">
-    <h2>Contacts</h2>
-    <br>
-    <p>Email: karann6287@gmail.com</p>
-    <p><a href="https://www.linkedin.com/in/karan-verma-48262a363/">LinkedIn</a></p>
+<section class="contacts" id="contacts">
+    <h3>Contact</h3>
+    <ul>
+        <li>Email: karann6287@gmail.com</li>
+        <li>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </li>
+    </ul>
 </section>
 
 <footer>
-    © 2026 Karan Verma
+    <p>© 2026 Karan Verma</p>
 </footer>
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-
-    const toggle = document.getElementById("theme-toggle");
-
-    const savedTheme = localStorage.getItem("theme");
-
-    if (savedTheme === "dark") {
-        document.body.classList.add("dark-mode");
-        toggle.textContent = "☀️";
-    }
-
-    toggle.addEventListener("click", function() {
-
-        document.body.classList.toggle("dark-mode");
-
-        if (document.body.classList.contains("dark-mode")) {
-            toggle.textContent = "☀️";
-            localStorage.setItem("theme", "dark");
-        } else {
-            toggle.textContent = "🌙";
-            localStorage.setItem("theme", "light");
-        }
-
-    });
-
-});
-</script>
+<script src="toggle.js"></script>
 
 </body>
 </html>
